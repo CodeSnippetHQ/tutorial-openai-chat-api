@@ -1,0 +1,22 @@
+# build output
+/dist
+/tmp
+/build
+
+# ide
+.idea
+.project
+.classpath
+.c9/
+.vscode/
+
+
+# dependencies
+node_modules/
+
+# sensitive
+.env*
+!.env.example
+
+# system
+.DS_Store
