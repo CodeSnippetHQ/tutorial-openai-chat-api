@@ -1,4 +1,4 @@
-# How to Use the OpenAI Completions API
+# How to Use the OpenAI Chat Completions API (Chat GPT API)
 ###### By [Tim Wheeler](https://timwheeler.com?ref=github) from [CodeSnippet.io](https://codesnippet.io?ref=github)
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FCodeSnippetHQ%2Ftutorial-openai-completions-api&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
