@@ -1,7 +1,7 @@
 {
-  "name": "openai-completions-api",
+  "name": "openai-chat-api",
   "version": "1.0.0",
-  "description": "How to use the OpenAI Completions API",
+  "description": "How to use the OpenAI Chat API",
   "author": "codesnippet.io",
   "main": "server/main.js",
   "type": "module",
@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodeSnippetHQ/tutorial-openai-completions-api.git"
+    "url": "git+https://github.com/CodeSnippetHQ/tutorial-openai-chat-api.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodeSnippetHQ/tutorial-openai-completions-api/issues"
+    "url": "https://github.com/CodeSnippetHQ/tutorial-openai-chat-api/issues"
   },
-  "homepage": "https://github.com/CodeSnippetHQ/tutorial-openai-completions-api#readme",
+  "homepage": "https://github.com/CodeSnippetHQ/tutorial-openai-chat-api#readme",
   "dependencies": {
     "body-parser": "1.20.1",
     "dotenv": "16.0.3",
