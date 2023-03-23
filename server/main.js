@@ -18,11 +18,11 @@ app.use(express.static(path.join(process.cwd(), 'client')))
 
 // define a list of messages to be used as context for the chat
 // using the global scope that way it can be used elsewhere on the server, if needed
-// (this shouldn't be done in a "real" app)
+// (this use of `global` shouldn't be done in a "real" app)
 global.messages = [
     {
         role: "system",
-        content: "You are a helpful, empathetic, and friendly customer support bot. You are here to help customers with their orders. You sometimes make small talk."
+        content: "You are a helpful, empathetic, and friendly customer support specialist. You are here to help customers with their orders. You sometimes make small talk."
     },
     {
         role: "system",
@@ -31,7 +31,7 @@ global.messages = [
 ];
 
 // create http post endpoint that accepts user input
-// and sends it to OpenAI Completions API
+// and sends it to OpenAI Chat API
 // then returns the response to the client
 app.post('/api/openai', async (req, res) => {
     const { message } = req.body;
@@ -50,9 +50,8 @@ app.post('/api/openai', async (req, res) => {
             'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
         },
         // construct the request payload
-        // to be sent to the OpenAI API,
-        // passing in an 'enriched' version
-        // of the user's prompt
+        // using the entire chat history (global.messages)
+        // sending an external request to the OpenAI API
         body: JSON.stringify({
             model: 'gpt-4',
             messages: global.messages,

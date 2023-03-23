@@ -1,5 +1,5 @@
 // handle when the user submits a question through the form
-async function handleSubmitQuestion(message) {
+async function handleSubmitMessage(message) {
     // input validation
     if (!message) {
         return alert('Please enter your support question');
@@ -41,6 +41,7 @@ function addUserMessageToDialogueBox(message) {
     // clear the input for the next question
     document.getElementById('prompt-input').value = '';
 
+    // display loading indicator in dialogue box
     addLoadingIndicatorToDialogueBox();
 }
 
@@ -108,16 +109,16 @@ function addBotMessageToDialogueBox(response) {
 }
 
 // when the window loads, add an event listener to the form
-// that calls the handleSubmitQuestion function when the form is submitted
+// that calls the handleSubmitMessage function when the form is submitted
 window.onload = () => document.getElementById('prompt-form').addEventListener('submit', (e) => {
     // prevent the form from refreshing the page
     e.preventDefault();
 
     // get the value of the input
-    const question = document.getElementById('prompt-input').value;
+    const message = document.getElementById('prompt-input').value;
 
     // call the function that handles the fetch request to our backend
-    handleSubmitQuestion(question).then((data) => {
+    handleSubmitMessage(message).then((data) => {
         // add the chatbot's response to the DOM when the fetch request is complete
         addBotMessageToDialogueBox(data);
     });

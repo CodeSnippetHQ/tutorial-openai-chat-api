@@ -1,9 +1,9 @@
-# How to Use the OpenAI Chat Completions API (Chat GPT API)
+# How to Use the OpenAI Chat API (Chat GPT)
 ###### By [Tim Wheeler](https://timwheeler.com?ref=github) from [CodeSnippet.io](https://codesnippet.io?ref=github)
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FCodeSnippetHQ%2Ftutorial-openai-completions-api&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FCodeSnippetHQ%2Ftutorial-openai-chat-api&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-In this project we will learn how to use the OpenAI Completions API to build a simple customer support chatbot.
+In this project we will learn how to use the OpenAI Chat API to build a simple customer support chatbot.
 
 ![project](client/images/project.png)
 
@@ -26,7 +26,7 @@ To run this project:
 4. Open `localhost:3000` in your browser to view the project
 
 ## 📄 API Docs
-OpenAI Completion API docs: https://beta.openai.com/docs/api-reference/completions/create
+OpenAI Chat API docs: https://platform.openai.com/docs/api-reference/chat
 
 ---
 ## 👇 Subscribe & Follow
