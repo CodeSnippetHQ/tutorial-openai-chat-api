@@ -2,7 +2,7 @@
 async function handleSubmitMessage(message) {
     // input validation
     if (!message) {
-        return alert('Please enter your support question');
+        return alert('Please ask me about Absolute Zero');
     }
 
     // add the user's question to the DOM
@@ -24,13 +24,15 @@ async function handleSubmitMessage(message) {
     return payload
 }
 
+
+
 // add the user's question to the dialogue box
 function addUserMessageToDialogueBox(message) {
     // create a new li element
     const userMessage = document.createElement('li');
 
     // add user-specific styling to element
-    userMessage.classList.add('bg-indigo-500', 'text-white', 'rounded', 'p-2', 'w-fit', 'self-end', 'break-words');
+    userMessage.classList.add('bg-blue-500', 'text-white', 'rounded', 'p-2', 'w-fit', 'self-end', 'break-words');
 
     // add the user's message to the element
     userMessage.innerText = message;
@@ -54,7 +56,7 @@ function addLoadingIndicatorToDialogueBox() {
     loadingIndicator.id = 'loading-indicator';
 
     // add loading indicator styling
-    loadingIndicator.classList.add('bg-gray-500', 'text-white', 'rounded', 'p-2', 'w-fit', 'self-start', 'w-12');
+    loadingIndicator.classList.add('bg-indigo-500', 'text-white', 'rounded', 'p-2', 'w-fit', 'self-start', 'w-12');
 
     // create a new image element
     const loadingImage = document.createElement('img');
@@ -95,7 +97,7 @@ function addBotMessageToDialogueBox(response) {
         botMessage.innerText = "Oh no! Something went wrong. Please try again later.";
     } else {
         // add user-specific styling to element
-        botMessage.classList.add('bg-gray-500', 'text-white', 'rounded', 'p-2', 'w-fit', 'self-start');
+        botMessage.classList.add('bg-indigo-500', 'text-white', 'rounded', 'p-2', 'w-fit', 'self-start');
 
         // add the user's response to the element
         botMessage.innerText = response.data.trim();

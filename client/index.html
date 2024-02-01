@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="CodeSnippet.io">
-    <meta name="title" content="OpenAI Chat API | CodeSnippet.io">
+    <meta name="author" content="Absolute Zero #12096">
+    <meta name="title" content="Absolute Zero GPT">
     <meta name="description" content="How to use the OpenAI Chat API">
-    <title>OpenAI Chat API | CodeSnippet.io</title>
+    <title>Absolute Zero GPT</title>
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
+    </style>
 </head>
 
+
+<div class="z-20 bg-scroll relative fixed h-screen w-full bg-slate-950">
+    <div
+        class="z-0 bg-scroll absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]">
+    </div>
+
+
 <body>
-<div id="root" class="flex flex-col min-h-screen p-16">
+    <div id="root" class="z-20 flex flex-col h-screen p-16 bg-slate-900">
 
-    <main class="grow flex flex-col items-center justify-center">
-        <h1 class="text-center text-2xl mt-5 font-bold my-4">OpenAI Chat API</h1>
-        <h2 class="text-center text-xl mt-5 my-4">Customer Support</h2>
-        <section class="w-full max-w-3xl border-2 border-gray-200 rounded-md p-4 h-96 overflow-scroll">
-            <ul id="dialogue" class="flex flex-col space-y-4">
-                <li class="bg-gray-100 rounded p-2 w-fit self-start break-words">
-                    Hi there 👋 I can help you with your support questions!
-                </li>
-            </ul>
-        </section>
-        <section class="my-4 w-full max-w-3xl">
-            <div class="flex flex-col">
-                <form id="prompt-form">
-                    <label for="prompt-input" class="block text-gray-700 text-sm font-bold mb-2">Enter your support
-                        question</label>
-                    <textarea
-                            id="prompt-input"
-                            name="prompt"
-                            cols="38"
-                            rows="3"
-                            placeholder="The item I purchased is broken. How do I receive a refund?"
-                            class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-3 text-gray-700"
-                    ></textarea>
-                    <button type="submit"
-                            class="my-4 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
-                        Send
-                    </button>
-                </form>
+        <main class="z-20 grow flex flex-col items-center justify-center">
+            <h1 style=" font-family:Orbitron" class=" z-20 text-center text-8xl mt-5 font-bold my-4 text-white">Absolute GPT</h1>
+            <div id="root" class="flex flex-col h-0 p-10 bg-slate-900"></div>
+            <h2  style="font-family:Orbitron" class="text-center text-xl mt-5 font-mono my-4 text-white "> </h2>
+            <section class="w-full max-w-4xl  border-cyan-500 border-8 shadow-2xl rounded-md p-4 h-96 overflow-y-auto">
+                <ul id="dialogue" class="flex flex-col space-y-4">
+                    <li class="bg-indigo-500 rounded p-2 w-fit self-start break-words text-white">
+                        Hi there 👋 I am Absolute Zero GPT!
+                    </li>
+                </ul>
+            </section>
+
+            <section class="my-4 w-full max-w-4xl">
+                <div class="flex flex-col">
+                    <form id="prompt-form">
+                        <label style="font-family:Orbitron" for="prompt-input" class="block text-white text-sm font-bold font-mono mb-2 bg-blend-multiply">Enter your
+                            questions about Absolute Zero</label>
+                        <textarea id="prompt-input" name="prompt" cols="38" rows="3"
+                            placeholder="Tell me about your outreach"
+                            class=" shadow-2xl border-cyan-900 focus:border-cyan-500 appearance-none border-8 border-cyan-500 rounded w-full py-2 px-3 text-white bg-slate-900 "></textarea>
+                        <button style="font-family:Orbitron" type="submit"
+                            class="my-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="text-center mt-5 flex flex-col items-center space-y-2">
+                <p class="text-gray-500 font-mono text-sm text-white">An AI chatbot by Absolute Zero #12096</p>
+                <a href="https://azrobotics.org/" class="text-blue-500 font-semibold underline font-mono">
+                    <img class="h-16" src="images/logo.png" alt="azrobotics.com">
+                </a>
             </div>
-        </section>
-    </main>
+        </footer>
+        <script src="app/index.js" type="module"></script>
 
-    <footer>
-        <div class="text-center mt-5 flex flex-col items-center space-y-2">
-            <p class="text-gray-500 font-mono text-sm">A lightning-fast tutorial by </p>
-            <a href="https://codesnippet.io?ref=openai-chat-api" class="text-indigo-500 font-semibold underline">
-                <img class="h-16" src="images/logo.png" alt="CodeSnippet.io by PairProgram.com">
-            </a>
-        </div>
-    </footer>
-    <script src="app/index.js" type="module"></script>
 </div>
+    
 </body>
 
 </html>
